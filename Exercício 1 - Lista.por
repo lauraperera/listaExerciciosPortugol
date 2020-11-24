@@ -1,3 +1,10 @@
+/*
+ * Laura Soares Perera
+ * TADS IFSul Bagé - 2020.1
+ * 
+ */
+
+
 programa
 {
 	inclua biblioteca Texto --> tx
@@ -44,7 +51,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 556; 
+ * @POSICAO-CURSOR = 2; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

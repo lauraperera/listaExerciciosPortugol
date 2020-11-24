@@ -1,3 +1,9 @@
+/*
+ * Laura Soares Perera
+ * TADS IFSul Bagé - 2020.1
+ * 
+ */
+ 
 programa
 {	
 	funcao inicio()
@@ -106,8 +112,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1634; 
- * @DOBRAMENTO-CODIGO = [79, 85, 91, 97];
+ * @POSICAO-CURSOR = 40; 
+ * @DOBRAMENTO-CODIGO = [85, 91, 97, 103];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
