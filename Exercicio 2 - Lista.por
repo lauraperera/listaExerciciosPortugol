@@ -9,7 +9,7 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro vetor[10], i, varAux
+		inteiro vetor[10], i
 
 		//preenche o vetor
 		para(i=0; i<10; i++){
@@ -20,23 +20,13 @@ programa
 		//mostra o vetor
 		escreva("Vetor: \n")
 		para(i=0; i<10; i++){
-			escreva("|", vetor[i],"|")
+			escreva("|", vetor[i],"|\t")
 		}
 
-		//inverte o vetor
-		varAux = vetor[0]
-		para(i=0; i<10; i++){
-			se(i != 9){
-				vetor[i] = vetor[9-i]
-			}senao{
-				vetor[i] = varAux
-			}
-		}
-
-		//mostra vetor invertido 
+		//percorre o vetor de trás p frente mostrando na tela
 		escreva("\nVetor invertido: \n")
-		para(i=0; i<10; i++){
-			escreva("|", vetor[i],"|")
+		para(i=9; i>=0; i--){
+			escreva("|", vetor[i], "|\t")
 		}
 	}
 }
@@ -45,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 40; 
+ * @POSICAO-CURSOR = 118; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

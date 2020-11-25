@@ -10,40 +10,24 @@ programa
 	inclua biblioteca Texto --> tx
 	funcao inicio()
 	{
-		cadeia palavra[5], varAux
+		cadeia palavra
 		inteiro caracteres, i
 		
-		para(i=0; i<5; i++){
-			escreva("Escreva uma palavra de 5 letras, letra por letra. Letra ", i, ": \n")
-			leia(palavra[i])
-		}
-
-		escreva("A sua palavra é: \n")
-		para(i=0; i<5; i++){
-			escreva(palavra[i])
-		}
-
-		varAux = palavra[0]
-		para(i=0; i<5; i++){
-			se(i != 4){
-				palavra[i] = palavra[4-i]
-			}senao{
-				palavra[i] = varAux
-			}
-		}
-
-		escreva("\nA sua palavra invertida é: \n")
-		para(i=0; i<5; i++){
-			escreva(palavra[i])
-		}
-		//caracteres = tx.numero_caracteres(palavra)
+		escreva("Insira uma palavra:\n")
+		leia(palavra)
+		
+		caracteres = tx.numero_caracteres(palavra)
 
 		//escreva("A palavra tem ", caracteres, " caracteres\n")
+		//escreva(tx.obter_caracter(palavra, 0))
+		//escreva(tx.obter_caracter(palavra, 1))
+		//escreva(tx.obter_caracter(palavra, 2))
 
-		
-	
+		//o i inicia na ultima posição da palavra, e percorre de trás pra frente
+		para (i = caracteres-1; i >= 0; i--) {
+			escreva(tx.obter_caracter(palavra, i))
+		}
 			
-	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -51,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2; 
+ * @POSICAO-CURSOR = 534; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
